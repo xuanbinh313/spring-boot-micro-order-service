@@ -1,0 +1,9 @@
+CREATE TABLE t_orders(
+    id SERIAL PRIMARY KEY,
+    order_number INT NOT NULL,
+    sku_code VARCHAR(255),
+    price DECIMAL(19, 2) NOT NULL,
+    quantity INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
